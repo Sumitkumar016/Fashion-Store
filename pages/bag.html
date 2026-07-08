@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Bag</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/bag.css">
+</head>
+<body>
+    <header class="site-header">
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+            <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+
+        <nav class="nav_bar" aria-label="Primary navigation">
+            <a href="../index.html#products">Men</a>
+            <a href="../index.html#products">Women</a>
+            <a href="../index.html#products">Kids</a>
+            <a href="../index.html#categories">Home & Living</a>
+            <a href="../index.html#products">Beauty</a>
+            <a href="../index.html#products">Studio <sup>New</sup></a>
+        </nav>
+
+        <form class="search_bar bag-search-form" action="../index.html" aria-label="Search products">
+            <span class="material-symbols-outlined search_icon" aria-hidden="true">search</span>
+            <input class="search_input" type="search" name="q" placeholder="Search products on home" autocomplete="off">
+        </form>
+
+        <div class="action_bar" aria-label="Account actions">
+            <button class="action_container" type="button" aria-label="Open profile">
+                <span class="material-symbols-outlined action_icon" aria-hidden="true">person</span>
+                <span class="action_name">Profile</span>
+            </button>
+            <button class="action_container" type="button" aria-label="Open wishlist">
+                <span class="material-symbols-outlined action_icon" aria-hidden="true">favorite</span>
+                <span class="action_name">Wishlist</span>
+            </button>
+            <a class="action_container bag-link active" href="bag.html" aria-label="Open shopping bag">
+                <span class="material-symbols-outlined action_icon" aria-hidden="true">shopping_bag</span>
+                <span class="action_name">Bag</span>
+                <span class="bag-items" aria-live="polite">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="bag-main">
+        <section class="bag-hero" aria-labelledby="bag-title">
+            <span class="eyebrow">Secure checkout</span>
+            <h1 id="bag-title">Your Shopping Bag</h1>
+            <p>Review your selected products, savings, delivery dates, and final amount before placing the order.</p>
+        </section>
+
+        <section class="bag-page" aria-label="Shopping bag">
+            <div class="bag-items-container" aria-live="polite"></div>
+
+            <aside class="bag-summary" aria-labelledby="summary-title">
+                <div class="bag-details-container"></div>
+                <button class="btn-place-order" type="button">
+                    <span class="material-symbols-outlined" aria-hidden="true">lock</span>
+                    Place Order
+                </button>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer_container">
+            <section class="footer_column" aria-labelledby="shop-links">
+                <h2 id="shop-links">Shop</h2>
+                <a href="../index.html#products">Men</a>
+                <a href="../index.html#products">Women</a>
+                <a href="../index.html#products">Kids</a>
+                <a href="../index.html#categories">Home & Living</a>
+                <a href="../index.html#products">Beauty</a>
+            </section>
+            <section class="footer_column" aria-labelledby="help-links">
+                <h2 id="help-links">Customer Care</h2>
+                <a href="#">Contact us</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Order tracking</a>
+                <a href="#">Gift cards</a>
+            </section>
+            <section class="footer_column footer-highlight" aria-labelledby="promise-title">
+                <h2 id="promise-title">Fashion Store Promise</h2>
+                <p>Fresh styles, transparent prices, and a bag that remembers what you love.</p>
+            </section>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Fashion Store. Built for learning.
+        </div>
+    </footer>
+
+    <script src="../data/items.js"></script>
+    <script src="../scripts/index.js"></script>
+</body>
+</html>

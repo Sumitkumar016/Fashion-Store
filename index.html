@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700;800&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="site-header">        
+
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+            <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+
+        <nav class="nav_bar" aria-label="Primary navigation">
+            <a href="#products">Men</a>
+            <a href="#products">Women</a>
+            <a href="#products">Kids</a>
+            <a href="#categories">Home & Living</a>
+            <a href="#products">Beauty</a>
+            <a href="#products">Studio <sup>New</sup></a>
+        </nav>
+
+        <label class="search_bar" aria-label="Search products">
+            <span class="material-symbols-outlined search_icon" aria-hidden="true">search</span>
+            <input class="search_input" type="search" placeholder="Search by brand or product" autocomplete="off">
+        </label>
+
+        <div class="action_bar" aria-label="Account actions">
+            <button class="action_container" type="button" aria-label="Open profile">
+                <span class="material-symbols-outlined action_icon" aria-hidden="true">person</span>
+                <span class="action_name">Profile</span>
+            </button>
+            <button class="action_container" type="button" aria-label="Open wishlist">
+                <span class="material-symbols-outlined action_icon" aria-hidden="true">favorite</span>
+                <span class="action_name">Wishlist</span>
+            </button>
+            <a class="action_container bag-link" href="pages/bag.html" aria-label="Open shopping bag">
+                <span class="material-symbols-outlined action_icon" aria-hidden="true">shopping_bag</span>
+                <span class="action_name">Bag</span>
+                <span class="bag-items" aria-live="polite">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section" aria-labelledby="hero-title">
+            <img class="hero-image" src="images/banner.jpg" alt="Fashion sale banner with curated styles">
+            <div class="hero-content">
+                <span class="eyebrow">Fresh season edit</span>
+                <h1 id="hero-title">Style picks worth adding to your bag</h1>
+                <p>Discover sharp deals, trending labels, and everyday essentials in one polished shopping experience.</p>
+                <a class="hero-button" href="#products">Shop products</a>
+            </div>
+        </section>
+
+        <section class="promo-strip" aria-label="Shopping benefits">
+            <article>
+                <span class="material-symbols-outlined" aria-hidden="true">local_shipping</span>
+                <strong>Fast delivery</strong>
+                <p>Reliable shipping on every order.</p>
+            </article>
+            <article>
+                <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+                <strong>Original brands</strong>
+                <p>Curated styles from trusted labels.</p>
+            </article>
+            <article>
+                <span class="material-symbols-outlined" aria-hidden="true">assignment_return</span>
+                <strong>Easy returns</strong>
+                <p>Simple returns on eligible items.</p>
+            </article>
+        </section>
+
+        <section class="content-section" aria-labelledby="offers-title">
+            <div class="section-heading">
+                <span>Limited-time drops</span>
+                <h2 id="offers-title">Medal Worthy Brands To Bag</h2>
+            </div>
+            <div class="offer-grid">
+                <a href="#products"><img class="sale_item" src="images/offers/1.png" alt="Offer on featured fashion brand 1"></a>
+                <a href="#products"><img class="sale_item" src="images/offers/2.png" alt="Offer on featured fashion brand 2"></a>
+                <a href="#products"><img class="sale_item" src="images/offers/3.png" alt="Offer on featured fashion brand 3"></a>
+                <a href="#products"><img class="sale_item" src="images/offers/4.png" alt="Offer on featured fashion brand 4"></a>
+                <a href="#products"><img class="sale_item" src="images/offers/5.png" alt="Offer on featured fashion brand 5"></a>
+                <a href="#products"><img class="sale_item" src="images/offers/6.png" alt="Offer on featured fashion brand 6"></a>
+                <a href="#products"><img class="sale_item" src="images/offers/7.png" alt="Offer on featured fashion brand 7"></a>
+                <a href="#products"><img class="sale_item" src="images/offers/8.png" alt="Offer on featured fashion brand 8"></a>
+                <a href="#products"><img class="sale_item" src="images/offers/9.png" alt="Offer on featured fashion brand 9"></a>
+                <a href="#products"><img class="sale_item" src="images/offers/10.png" alt="Offer on featured fashion brand 10"></a>
+                <a href="#products"><img class="sale_item" src="images/offers/11.png" alt="Offer on featured fashion brand 11"></a>
+                <a href="#products"><img class="sale_item" src="images/offers/12.png" alt="Offer on featured fashion brand 12"></a>
+            </div>
+        </section>
+
+        <section class="content-section product-section" id="products" aria-labelledby="products-title">
+            <div class="section-heading">
+                <span>Handpicked products</span>
+                <h2 id="products-title">Trending Now</h2>
+            </div>
+            <div class="items-container" aria-live="polite"></div>
+            <div class="no-results" hidden>
+                <span class="material-symbols-outlined" aria-hidden="true">search_off</span>
+                <h3>No products found</h3>
+                <p>Try searching with a different brand or product name.</p>
+            </div>
+        </section>
+
+        <section class="content-section" id="categories" aria-labelledby="categories-title">
+            <div class="section-heading">
+                <span>Browse faster</span>
+                <h2 id="categories-title">Shop By Category</h2>
+            </div>
+            <div class="category-grid">
+                <a href="#products"><img class="sale_item" src="images/categories/1.jpg" alt="Shop ethnic wear"></a>
+                <a href="#products"><img class="sale_item" src="images/categories/2.jpg" alt="Shop casual wear"></a>
+                <a href="#products"><img class="sale_item" src="images/categories/3.jpg" alt="Shop western wear"></a>
+                <a href="#products"><img class="sale_item" src="images/categories/4.jpg" alt="Shop activewear"></a>
+                <a href="#products"><img class="sale_item" src="images/categories/5.jpg" alt="Shop footwear"></a>
+                <a href="#products"><img class="sale_item" src="images/categories/6.jpg" alt="Shop accessories"></a>
+                <a href="#products"><img class="sale_item" src="images/categories/7.jpg" alt="Shop beauty products"></a>
+                <a href="#products"><img class="sale_item" src="images/categories/8.jpg" alt="Shop kids fashion"></a>
+                <a href="#products"><img class="sale_item" src="images/categories/9.jpg" alt="Shop home essentials"></a>
+                <a href="#products"><img class="sale_item" src="images/categories/10.jpg" alt="Shop premium collections"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer_container">
+            <section class="footer_column" aria-labelledby="shop-links">
+                <h2 id="shop-links">Shop</h2>
+                <a href="#products">Men</a>
+                <a href="#products">Women</a>
+                <a href="#products">Kids</a>
+                <a href="#categories">Home & Living</a>
+                <a href="#products">Beauty</a>
+            </section>
+            <section class="footer_column" aria-labelledby="help-links">
+                <h2 id="help-links">Customer Care</h2>
+                <a href="#">Contact us</a>
+                <a href="#">Shipping</a>
+                <a href="#">Returns</a>
+                <a href="#">Order tracking</a>
+                <a href="#">Gift cards</a>
+            </section>
+            <section class="footer_column footer-highlight" aria-labelledby="promise-title">
+                <h2 id="promise-title">Fashion Store Promise</h2>
+                <p>Fresh styles, transparent prices, and a bag that remembers what you love.</p>
+            </section>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Fashion Store. Built for learning.
+        </div>
+    </footer>
+
+    <script src="data/items.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
